@@ -34,14 +34,14 @@ main {
 .title-box {
     position: relative;
     text-align: center;
-    font-size: 30px;
+    font-size: 25px;
     color: #333;
 }
 
 .undirline {
     display: block;
     width: 100px;
-    height: 8px;
+    height: 6px;
     background-color: dodgerblue;
     margin: 0 auto;
     border-radius: 3px;
@@ -94,6 +94,7 @@ main {
 }
 
 .catd__title {
+    text-transform: capitalize;
     font-size: 16px;
     font-weight: 600;
     letter-spacing: .5px;
@@ -164,4 +165,8 @@ main {
     background: black;
     color: #fff;
     transition: .5s ease;
+}
+
+.card__random:active {
+    transform: scale(.9);
 }
