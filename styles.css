@@ -1,0 +1,167 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    font-family: sans-serif;
+    background: #f1f5f8;
+}
+img {
+    width: 40px;
+}
+main {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.container {
+    width: 80%;
+    max-width: 1400px;
+    margin: 0 auto;
+    position: relative;
+    top: 50vh;
+    transform: translateY(-50%);
+}
+
+.title-box {
+    position: relative;
+    text-align: center;
+    font-size: 30px;
+    color: #333;
+}
+
+.undirline {
+    display: block;
+    width: 100px;
+    height: 8px;
+    background-color: dodgerblue;
+    margin: 0 auto;
+    border-radius: 3px;
+    margin-top: 4px;
+    
+}
+
+.card {
+    width: 320px;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 25px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 0 5px 1px #999;
+    text-align: center;
+}
+
+.card__img {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.card__img::after {
+    position: absolute;
+    left: 4px;
+    bottom: 2px;
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: dodgerblue;
+    z-index: 0;
+}
+
+
+.card__user {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.catd__title {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: .5px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.card__job {
+    font-size: 15px;
+    margin: 8px 0;
+    color: dodgerblue;
+}
+
+.card__info {
+    font-size: 15px;
+    text-align: start;
+    margin-top: 15px;
+    letter-spacing: .5px;
+    line-height: 1.5;
+}
+
+.card__btns {
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.card__btn {
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.card__btn {
+    cursor: pointer;
+    margin: 0 8px;
+}
+
+.card__btn:active {
+    transform: scale(.9);
+}
+.prev, .next {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border: 3px solid;
+    border-bottom-style: none;
+    border-right: none;
+    border-top-color: dodgerblue;
+    border-left-color: dodgerblue;
+}
+.prev {
+    transform: rotate(-45deg);
+}
+.next {
+    transform: rotate(135deg);
+}
+
+.card__random {
+    cursor: pointer;
+    padding: 5px;
+    border: 2px solid #222;
+    border-radius: 7px;
+    background: transparent;
+}
+.card__random:hover {
+    background: black;
+    color: #fff;
+    transition: .5s ease;
+}
